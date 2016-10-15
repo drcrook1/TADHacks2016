@@ -8,12 +8,12 @@ app.config['SECRET_KEY'] = '\x87\x95\xaa\x86\x16*3n&x\x85PgY\xc4\xc3\xddl\x05\xa
 
 api = Api(app)
 
+from apis.confapis import confapis
+app.register_blueprint(confapis)
+
 # Register BluePrints
 from baseviews.views import baseviews
 app.register_blueprint(baseviews)
-
-from apis.confapis import confapis
-app.register_blueprint(confapis)
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port=5000)

@@ -18,7 +18,7 @@ def auth_error(e):
 @baseviews.route('/index')
 def index():
     title = "Jinja Title"
-    return render_template('index.html', title = title, text = 'Hello World!')
+    return render_template('index.html')
 
 
 @baseviews.route('/new')

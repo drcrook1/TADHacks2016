@@ -21,11 +21,6 @@
                     <ul>
                         <li><a href="{{ url_for('baseviews.new') }}">New</a></li>
                         <li><a href="#">Previous</a></li>
-                        {% if current_user.is_authenticated %}
-                            <li><a href="{{ url_for('authviews.logout') }}">Logout</a></li>
-                        {% else %}
-                            <li><a href="{{ url_for('authviews.login') }}">Login</a></li>
-                        {% endif %}
                     </ul>
                 </nav>
             </header>

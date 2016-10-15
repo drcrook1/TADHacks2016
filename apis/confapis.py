@@ -10,5 +10,5 @@ def values():
         return jsonify({'status' : 'success POST'})
 
 @confapis.route('/receivetranscript', methods=['POST'])
-def values():
+def receivetranscript():
     return jsonify({'status' : 'success POST'})

@@ -8,6 +8,10 @@ app.config['SECRET_KEY'] = '\x87\x95\xaa\x86\x16*3n&x\x85PgY\xc4\xc3\xddl\x05\xa
 
 api = Api(app)
 
+# Register BluePrints
+from baseviews.views import baseviews
+app.register_blueprint(baseviews)
+
 from apis.confapis import confapis
 app.register_blueprint(confapis)
 
